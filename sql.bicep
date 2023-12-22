@@ -2,7 +2,7 @@
 param location string = resourceGroup().location
 var common = loadJsonContent('vars.json')
 param sqlServerName string = uniqueString('sql', resourceGroup().id)
-param sqlDBName string = 'signup-db'
+param sqlDBName string = 'todo-list-db'
 param sqlAdminUser string = 'sqladmin'
 
 @secure()
